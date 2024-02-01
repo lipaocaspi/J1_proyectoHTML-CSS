@@ -4,48 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <title>E-COMMERCE</title>
 </head>
 <body>
     <div class="container">
-        <section class="header">
+        <section class="header" id="header">
             <div class="logo">
                 <img class="logoMainPage" src="images/logo.PNG" alt="">
             </div>
             <div class="menuP menuHam">
-                <a class="linkTexts headerLinks" href="">Catálogo</a>
-                <a class="linkTexts headerLinks" href="">Quiénes <br> Somos</a>
-                <a class="linkTexts headerLinks" href="#contact">Contáctanos</a>
+                <a class="linkTexts whiteText headerLinks" href="./pages/catalogue.html">Catálogo</a>
+                <a class="linkTexts whiteText headerLinks" href="./pages/about.html">Quiénes <br> Somos</a>
+                <a class="linkTexts whiteText headerLinks" href="#contact">Contáctenos</a>
             </div>
         </section>
         <section class="ad down">
             <img class="adImage" src="images/banner.png" alt="">
         </section>
-        <p class="subtitleMainPage">PRODUCTOS DESTACADOS</p>
+        <p class="subtitleMainPage" id="mainProducts">PRODUCTOS DESTACADOS</p>
         <section class="mainProducts down gap">
             <div class="mainProduct smallProduct">
-                <a href="">
-                    <img class="mainProductImage" src="images/camisa.jpg" alt="">
+                <a class="linkTexts blackText" href="">
+                    <p style="text-align: center;">Prendas de vestir</p>
+                    <img class="mainProductImage smallImage" src="images/camisa.png" alt="">
+                    <p style="font-size: 20px;">Camisa Negra</p>
+                    <p style="font-size: 20px;">$80.000</p>
                 </a>
             </div>
             <div class="mainProduct smallProduct">
-                <a href="">
-                    <img class="mainProductImage" src="images/mug.jpg" alt="">
+                <a class="linkTexts blackText" href="">
+                    <p style="text-align: center;">Utensilios de cocina</p>
+                    <img class="mainProductImage smallImage" src="images/mug.png" alt="">
+                    <p></p>
+                    <p>Mug</p>
+                    <p>$25.000</p>
                 </a>
             </div>
             <div class="mainProduct smallProduct">
-                <a href="">
-                    <img class="mainProductImage" src="images/buso.jpg" alt="">
+                <a class="linkTexts blackText" href="">
+                    <p style="text-align: center;">Prendas de vestir</p>
+                    <img class="mainProductImage smallImage" src="images/buso.png" alt="">
+                    <p>Buso Blanco</p>
+                    <p>$120.000</p>
                 </a>
             </div>
         </section>
-        <section class="footer" id="contact">
-            <div class="contactUs">
-                <div class="leftContact">
-                    <p>Dirección</p>
+        <section class="contact" id="contact">
+            <div class="listContact down">
+                <div>
+                    <p class="titleContact">Enlaces Rápidos</p>
+                    <hr>
+                    <a href="#header" class="linkDownTexts"><p>Inicio</p></a>
+                    <a href="#" class="linkDownTexts"><p>Catálogo</p></a>
+                    <a href="#mainProducts" class="linkDownTexts"><p>Productos Destacados</p></a>
+                    <a href="#" class="linkDownTexts"><p>Quiénes Somos</p></a>
+                    <a href="#contact" class="linkDownTexts"><p>Contacto</p></a>
                 </div>
-                <div class="rightContact">
-                    <p>Enlaces</p>
+                <div>
+                    <p class="titleContact">Menú</p>
+                    <hr>
+                    <a href="#header" class="linkDownTexts"><p>Inicio</p></a>
+                    <a href="#" class="linkDownTexts"><p>Catálogo</p></a>
+                    <a href="#mainProducts" class="linkDownTexts"><p>Productos Destacados</p></a>
+                    <a href="#" class="linkDownTexts"><p>Quiénes Somos</p></a>
+                    <a href="#contact" class="linkDownTexts"><p>Contacto</p></a>
+                </div>
+                <div class="iconContacts">
+                    <p class="titleContact">Contáctenos</p>
+                    <hr> 
+                    <div class="contacts">
+                        <div class="contactLogos">
+                            <i class='bx bx-envelope-open'></i>
+                        </div>
+                        <div class="contactLogos">
+                            <i class='bx bx-envelope-open'></i>
+                        </div>
+                        <div class="contactLogos">
+                            <i class='bx bx-envelope-open'></i>
+                        </div>
+                        <div class="contactLogos">
+                            <i class='bx bx-envelope-open'></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
