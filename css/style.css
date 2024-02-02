@@ -160,6 +160,10 @@ p {
     padding: 1%;
 }
 
+.links {
+    padding: 1%;
+}
+
 i:hover {
     transform: scale(1.1);
 }
