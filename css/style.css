@@ -17,6 +17,33 @@ p {
     text-align: center;
 }
 
+.nav {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: end;
+    align-items: center;
+}
+
+.menuP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuA {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 0px 30px;
+    transition: 0.4s;
+}
+
+.navTarget, .closeMenu {
+    display: none;
+    cursor: pointer;
+    order: 1;
+}
+
 .header {
     display: grid;
     grid-template-columns: 20% 80%;
@@ -35,13 +62,6 @@ p {
     align-items: center;
     padding: 5%;
     width: 100%;
-}
-
-.menuP {
-    display: grid;
-    grid-template-columns: repeat(3, 20%);
-    align-items: center;
-    justify-content: space-around;
 }
 
 .linkTexts {
@@ -169,9 +189,50 @@ i:hover {
 }
 
 @media (max-width :840px) {
-    .menuHam {
-        visibility: hidden;
+    .navTarget {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        color: #d9d9d9;
+        font-size: 2rem; 
+        text-decoration: none;
     }
+    .menuP {
+        position: fixed;
+        width: 80%;
+        background: #2c2b47;
+        left: 0;
+        top: 15%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 100px;
+        z-index: 1;        
+        clip-path: circle(0% at top right);
+        transition: clip-path 0.4s;
+    }
+
+    .menuP:target{
+        clip-path: circle(150% at top right);
+    }
+
+    .menuP a {
+        display: block;
+        padding: 15px;
+    }
+
+    .closeMenu {
+        color: #d9d9d9;
+        font-size: 2rem; 
+        text-decoration: none;
+    }
+
+    .closeMenu::after{
+        position: absolute;
+        top: 0px;
+        right: 0px; 
+    }
+
     .down {
         grid-template-columns: 100%;
     }
