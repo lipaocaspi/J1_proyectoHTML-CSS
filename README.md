@@ -162,7 +162,7 @@ Se define un contenedor flexible que alinea sus elementos hijos a la derecha hor
 }
 ```
 
-Se define el estilo de un enlace *<a>* con la clase *menuA*. Elimina el subrayado, establece el color del texto a blanco, alinea el texto a la derecha, ajusta el peso de la fuente, agrega relleno y aplica una transición suave.
+Se define el estilo de un enlace *a* con la clase *menuA*. Elimina el subrayado, establece el color del texto a blanco, alinea el texto a la derecha, ajusta el peso de la fuente, agrega relleno y aplica una transición suave.
 
 ```
 .menuA {
@@ -367,7 +367,7 @@ Al hacer clic en un enlace que tiene un fragmento de URL que coincide con el *id
 }
 ```
 
-Establece el elemento *<a>* como un bloque y agrega un relleno en todos sus lados.
+Establece el elemento *a* como un bloque y agrega un relleno en todos sus lados.
 
 ```
 @media (max-width :840px) {
@@ -752,14 +752,14 @@ Al hacer clic en un enlace que tiene un fragmento de URL que coincide con el *id
 ```
 @media (max-width :840px) {
 	...
-	.menuHam:target{
+	.menuHam:target {
         clip-path: circle(150% at top left);
     }
 	...
 }
 ```
 
-Establece el elemento *<ul>* como un bloque y agrega un relleno en todos sus lados.
+Establece el elemento *ul* como un bloque y agrega un relleno en todos sus lados.
 
 ```
 @media (max-width :840px) {
