@@ -1,5 +1,28 @@
 body {
-    margin: 2%;
     font-family: "Kanit", sans-serif;
     background-color: #1e1d2b;
+}
+
+.container {
+    padding: 2%;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoMainPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    width: 100%;
 }

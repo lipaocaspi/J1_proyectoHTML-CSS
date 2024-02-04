@@ -13,18 +13,139 @@ p {
     margin: 0;
 }
 
+.headerC {
+    display: none
+}
+
+.catalogueTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mark {
+    background-color: #d9d9d9;
+}
+
 .menuC {
     overflow: auto;
+    width: 100%;
+}
+
+.menuHam{
+    width: 300px;
+    height: 200px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color:#2c2b47;
+    overflow-y: visible;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+}
+li {
+    list-style-type: none;
+}
+li>a {
+    text-decoration: none;
 }
 
 .center {
     text-align: center;
 }
 
+.menuHam, .navTarget, .closeMenu {
+    display: none;
+    cursor: pointer;
+    order: 1;
+}
+
 .linkTexts {
     text-decoration: none;
     text-align: center;
     font-size: 1.5rem
+}
+
+.productDetails {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    border: 2px solid;
+    padding: 10px;
+}
+
+.pictureMain {
+    background: url('./../images/camisa.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
+.pictureColumns {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 15% 80%;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
+    width: 90%;
+    height: 80%;
+}
+
+.pictureColumns img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.vista1, .vista2, .vista3, .vista4 {
+    border: 2px solid;
+}
+
+.pictureColumns > .vista1:hover ~ .pictureMain {
+    background: url('./../images/bx-sushi.svg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista2:hover ~ .pictureMain {
+    background: url('./../images/bx-sushi.svg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista3:hover ~ .pictureMain {
+    background: url('./../images/bx-sushi.svg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista4:hover ~ .pictureMain {
+    background: url('./../images/bx-sushi.svg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 25px 10px;
+}
+
+.buyButton {
+    background-color: #3f3e53;
+    width: 100px;
+    font-size: 1rem;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    color: white;
 }
 
 .linkDownTexts {
@@ -35,10 +156,6 @@ p {
 
 .whiteText {
     color: white;
-}
-
-.headerLinks:hover {
-    transform: scale(1.1);
 }
 
 .titleContact {
@@ -75,11 +192,62 @@ i:hover {
     transform: scale(1.1);
 }
 
+.font15 {
+    font-size: 1.5rem;
+}
+
 @media (max-width :840px) {
-    .menuHam {
-        visibility: hidden;
-    }
     .down {
         grid-template-columns: 100%;
+    }
+    .menuC {
+        display: none;
+    }
+    .headerC {
+        display: grid;
+    }
+    .navTarget {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        color: #d9d9d9;
+        font-size: 2rem; 
+        text-decoration: none;
+    }
+    .menuHam {
+        position: fixed;
+        width: 80%;
+        background: #2c2b47;
+        left: 20px;
+        top: 20%;
+        display: flex;
+        flex-direction: column;
+        padding: 5px 10px 25px 25px;
+        z-index: 1;        
+        clip-path: circle(0% at top left);
+        transition: clip-path 0.4s;
+        overflow: auto;
+    }
+
+    .menuHam:target{
+        clip-path: circle(150% at top left);
+    }
+
+    .menuHam ul {
+        display: block;
+        padding: 15px;
+    }
+
+    .closeMenu {
+        display: flex;
+        color: #d9d9d9;
+        font-size: 3rem; 
+        text-decoration: none;
+    }
+
+    .closeMenu::after{
+        position: absolute;
+        top: 0px;
+        left: 0px; 
     }
 }
