@@ -107,3 +107,71 @@ A todos los elementos que tengan la clase *icons* se le quita cualquier decoraci
     text-decoration: none;
 }
 ```
+
+Se define un diseño de cuadrícula con dos columnas, donde la primera columna ocupa el 20% del ancho y la segunda el 80%. Los elementos dentro de este contenedor se alinean a la derecha en términos de justificación y se centran verticalmente.
+
+```
+.nav {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: end;
+    align-items: center;
+}
+```
+
+Se define un contenedor flexible con anchura del 100%, y centra tanto horizontal como verticalmente los elementos hijos dentro del contenedor.
+
+```
+.logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+```
+
+Se define un contenedor flexible que centra horizontal y verticalmente su contenido. Además, se le añade un espacio de relleno del 5% alrededor del contenido y se establece que el contenedor ocupe todo el ancho disponible.
+
+```
+.logoMainPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    width: 100%;
+}
+```
+
+Se ocultan los elementos con las clases *navTarget* y *closeMenu*, se cambia el cursor a una mano, y se establece un orden de presentación de 1 para ambos elementos en un contenedor flexible.
+
+```
+.navTarget, .closeMenu {
+    display: none;
+    cursor: pointer;
+    order: 1;
+}
+```
+
+Se define un contenedor flexible que alinea sus elementos hijos a la derecha horizontalmente y los centra verticalmente.
+
+```
+.menuP {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+```
+
+Se define el estilo de un enlace *<a>* con la clase *menuA*. Elimina el subrayado, establece el color del texto a blanco, alinea el texto a la derecha, ajusta el peso de la fuente, agrega relleno y aplica una transición suave.
+
+```
+.menuA {
+    text-decoration: none;
+    color: #fff;
+    text-align: end;
+    font-weight: 500;
+    padding: 0px 30px;
+    transition: 0.4s;
+}
+```
+
