@@ -310,3 +310,150 @@ i:hover {
     transform: scale(1.1);
 }
 ```
+
+
+
+Las siguientes reglas están relacionadas con el diseño responsivo, por lo que se aplican al momento que el ancho de la pantalla sea igual o menor 840px:
+
+
+
+Se define un estilo para elementos con la clase *navTarget*. Los elementos se organizan en una disposición flexbox, se colocan en el extremo derecho del contenedor, se centran verticalmente y tienen un color de texto gris sin decoración de subrayado.
+
+```
+@media (max-width :840px) {
+    .navTarget {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        color: #d9d9d9;
+        font-size: 2rem; 
+        text-decoration: none;
+    }
+    ...
+}
+```
+
+Se define el estilo para un menú desplegable *menuP*. Cuando el menú está cerrado, se presenta como un círculo que se expande suavemente para revelar su contenido cuando se activa.
+
+```
+@media (max-width :840px) {
+	...
+    .menuP {
+        position: fixed;
+        width: 80%;
+        background: #2c2b47;
+        left: 0;
+        top: 15%;
+        display: flex;
+        flex-direction: column;
+        padding: 100px;
+        z-index: 1;        
+        clip-path: circle(0% at top right);
+        transition: clip-path 0.4s;
+    }
+    ...
+}
+```
+
+Al hacer clic en un enlace que tiene un fragmento de URL que coincide con el *id* de un elemento con la clase *menuP*, se aplica esta regla para cambiar el aspecto del menú, mostrando su contenido.
+
+```
+@media (max-width :840px) {
+	...
+    .menuP:target{
+        clip-path: circle(150% at top right);
+    }
+    ...
+}
+```
+
+Establece el elemento *<a>* como un bloque y agrega un relleno en todos sus lados.
+
+```
+@media (max-width :840px) {
+	...
+    .menuP a {
+        display: block;
+        padding: 15px;
+    }
+    ...
+}
+```
+
+Se define un estilo para elementos con la clase *closeMenu*. Presenta un texto con un tamaño de fuente grande, en gris, y sin subrayado.
+
+```
+@media (max-width :840px) {
+	...
+    .closeMenu {
+        display: flex;
+        color: #d9d9d9;
+        font-size: 3rem; 
+        text-decoration: none;
+    }
+    ...
+}
+```
+
+Posiciona un pseudo-elemento después del contenido de los elementos con la clase *closeMenu*.
+
+```
+@media (max-width :840px) {
+	...
+    .closeMenu::after{
+        position: absolute;
+        top: 0px;
+        right: 0px; 
+    }
+    ...
+}
+```
+
+Se indica que los elementos con la clase *down* deben tener un diseño de cuadrícula con una única columna que ocupa todo el ancho disponible.
+
+```
+@media (max-width :840px) {
+	...
+    .down {
+        grid-template-columns: 100%;
+    }
+    ...
+}
+```
+
+Se define un espacio entre las filas y columnas, según corresponda, del 2%.
+
+```
+@media (max-width :840px) {
+	...
+    .gap {
+        gap: 2%;
+    }
+    ...
+}
+```
+
+Se aplica a elementos que tengan la clase *smallProduct*, y ajusta su ancho al 40% del contenedor principal.
+
+```
+@media (max-width :840px) {
+	...
+    .smallProduct {
+        width: 40%;
+    }
+    ...
+}
+```
+
+Se especifica un tamaño fijo de 150x150 píxeles para cada elemento con esta clase.
+
+```
+@media (max-width :840px) {
+	...
+    .smallImage {
+        width: 150px;
+        height: 150px;
+    }
+}
+```
+
