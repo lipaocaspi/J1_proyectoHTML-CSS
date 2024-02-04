@@ -769,6 +769,133 @@ Establece el elemento *ul* como un bloque y agrega un relleno en todos sus lados
         padding: 15px;
     }
 }
+```
 
+
+
+## mainProductStyle.css
+
+**Nota** : algunos estilos de esta hoja ya han sido explicados anteriormente, por lo que serán omitidos.
+
+Cambia el color del texto de los elementos con la clase *textColor* al tono de gris claro especificado.
+
+```
+.textColor {
+    color: #d9d9d9;
+}
+```
+
+Cambia el tamaño de fuente de los elementos con la clase *font20* a 20 píxeles.
+
+```
+.font20 {
+    font-size: 20px;
+}
+```
+
+Cambia el peso de la fuente de los elementos con la clase *font500* a 500.
+
+```
+.font500 {
+    font-weight: 500;
+}
+```
+
+Cambia el tamaño de fuente de los elementos con la clase *font2* a 2rem.
+
+```
+.font2 {
+    font-size: 2rem;
+}
+```
+
+Crea una estructura de encabezado con dos secciones: una que ocupa el 20% del ancho y otra que ocupa el 80% del ancho.
+
+```
+.header {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+```
+
+Estiliza un texto, cambiando su tamaño, posición y color.
+
+```
+.close {
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    color: white;
+    font-size: 4rem;
+}
+```
+
+Crea una estructura con dos secciones: una que ocupa el 60% del ancho y otra que ocupa el 40% del ancho.
+
+```
+.pictureDetails {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 5%;
+}
+```
+
+Crea un contenedor flexible centrado tanto vertical como horizontalmente, con un fondo gris claro y esquinas ligeramente redondeadas.
+
+```
+.picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+    width: 100%;
+    border-radius: 1%;
+}
+```
+
+Establece que el elemento ocupe el 75% del ancho de su contenedor principal.
+
+```
+.pictureContent {
+    width: 75%;
+}
+```
+
+Agrega un relleno del 10% alrededor de su contenido.
+
+```
+.mainDetails {
+    padding: 10%;
+}
+```
+
+Estiliza un botón con un fondo gris claro, texto negro, esquinas redondeadas y un tamaño de fuente de 1.5 rem.
+
+```
+.buyButton {
+    background-color: #d9d9d9;
+    font-size: 1.5rem;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    color: black;
+}
+```
+
+Organiza el contenido de los elementos con la clase *details* en una columna y agrega un pequeño relleno alrededor de ese contenido.
+
+```
+.details {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+```
+
+Agrega espacio alrededor del contenido del elemento con la clase *reviews*, proporcionando un relleno más amplio en los lados derecho e izquierdo y un relleno más estrecho en la parte superior e inferior.
+
+```
+.reviews {
+    padding: 1% 5% 1% 5%;
+}
 ```
 
