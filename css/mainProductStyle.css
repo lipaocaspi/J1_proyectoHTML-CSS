@@ -57,11 +57,11 @@ p {
 }
 
 .buyButton {
-    background-color: #3f3e53;
+    background-color: #d9d9d9;
     font-size: 1.5rem;
-    padding: 10px 25px 10px 25px;
+    padding: 10px 20px 10px 20px;
     border-radius: 5px;
-    color: white;
+    color: black;
 }
 
 .details {

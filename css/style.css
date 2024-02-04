@@ -190,6 +190,9 @@ i:hover {
 }
 
 @media (max-width :840px) {
+    .descProduct {
+        font-size: 15px;
+    }
     .navTarget {
         display: flex;
         justify-content: end;
