@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
     font-family: "Kanit", sans-serif;
     background-color: #1e1d2b;
@@ -5,6 +7,46 @@ body {
 
 .container {
     padding: 2%;
+}
+
+.background {
+    background-color: #d9d9d9;
+}
+
+p {
+    margin: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: end;
+    align-items: center;
+}
+
+.menuP {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.menuA {
+    text-decoration: none;
+    color: #fff;
+    text-align: end;
+    font-weight: 500;
+    padding: 0px 30px;
+    transition: 0.4s;
+}
+
+.navTarget, .closeMenu {
+    display: none;
+    cursor: pointer;
+    order: 1;
 }
 
 .header {
@@ -27,6 +69,166 @@ body {
     width: 100%;
 }
 
+.linkTexts {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    padding: 50px;
+}
+
+.pictureMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture {
+    width: 50%;
+}
+
+.buyButton {
+    background-color: #3f3e53;
+    font-size: 1rem;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    color: white;
+    width: 150px;
+}
+
+.linkDownTexts {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.whiteText {
+    color: white;
+}
+
+.blackText {
+    color: black;
+}
+
+.headerLinks {
+    font-weight: 500;
+}
+
+.titlePage {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    padding: 10px;
+}
+
+.desc {
+    font-size: larger;
+}
+
+.headerLinks:hover {
+    transform: scale(1.1);
+}
+
+.titleContact {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.hrContact {
+    width: 30%; 
+    border: 1px solid #d9d9d9;
+}
+
+.contact {
+    background-color: #2c2b47;
+    padding: 5%;
+}
+
+.listContact {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 5%;
+    padding: 1%;
+}
+
 .links {
     padding: 4%;
+}
+
+i:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width :840px) {
+    .navTarget {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        color: #d9d9d9;
+        font-size: 2rem; 
+        text-decoration: none;
+    }
+    .menuP {
+        position: fixed;
+        width: 80%;
+        background: #2c2b47;
+        left: 0;
+        top: 15%;
+        display: flex;
+        flex-direction: column;
+        padding: 100px;
+        z-index: 1;        
+        clip-path: circle(0% at top right);
+        transition: clip-path 0.4s;
+    }
+
+    .menuP:target{
+        clip-path: circle(150% at top right);
+    }
+
+    .menuP a {
+        display: block;
+        padding: 15px;
+    }
+
+    .closeMenu {
+        display: flex;
+        color: #d9d9d9;
+        font-size: 3rem; 
+        text-decoration: none;
+    }
+
+    .closeMenu::after{
+        position: absolute;
+        top: 0px;
+        right: 0px; 
+    }
+
+    .down {
+        grid-template-columns: 100%;
+    }
+    .smallProduct {
+        width: 40%;
+    }
+    .gap {
+        gap: 2%;
+    }
+    .smallImage {
+        width: 150px;
+        height: 150px;
+    }
 }
