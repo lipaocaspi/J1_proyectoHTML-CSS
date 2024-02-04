@@ -457,3 +457,318 @@ Se especifica un tamaño fijo de 150x150 píxeles para cada elemento con esta cl
 }
 ```
 
+
+
+## catalogueStyle.css
+
+**Nota** : algunos estilos de esta hoja ya han sido explicados anteriormente, por lo que serán omitidos.
+
+Da un estilo específico a los elementos con la clase *mark*, asegurando que tengan un fondo gris y un texto oscuro, y que esta regla tenga precedencia sobre otras reglas que podrían afectar esos estilos.
+
+```
+.mark {
+    background-color: #d9d9d9;
+    color: #1e1d2b!important;
+}
+```
+
+Se establece el tamaño de la fuente en 1.5 rem.
+
+```
+.font15 {
+    font-size: 1.5rem;
+}
+```
+
+Si el contenido es más grande que el contenedor, se mostrará una barra de desplazamiento para permitir al usuario desplazarse y ver el contenido oculto.
+
+```
+.menuC {
+    overflow: auto;
+    width: 100%;
+}
+```
+
+Oculta los elementos con la clase *headerC*.
+
+```
+.headerC {
+    display: none
+}
+```
+
+Se ocultan los elementos con las clases *menuHam* *navTarget* y *closeMenu*, se cambia el cursor a una mano, y se establece un orden de presentación de 1 para los elementos en un contenedor.
+
+```
+.menuHam, .navTarget, .closeMenu {
+    display: none;
+    cursor: pointer;
+    order: 1;
+}
+```
+
+Se define un contenedor flexible, y centra tanto horizontal como verticalmente los elementos hijos dentro del contenedor.
+
+```
+.catalogueTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+```
+
+Estiliza y controla el tamaño y el desbordamiento de un menú desplegable.
+
+```
+.menuHam{
+    width: 300px;
+    height: 200px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color:#2c2b47;
+    overflow-y: visible;
+}
+```
+
+Elimina márgenes y rellenos predeterminados de las listas desordenadas. El margen a la izquierda de 5 píxeles puede proporcionar un espacio visual entre el borde izquierdo del contenedor padre y la lista.
+
+```
+ul {
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+}
+```
+
+Se eliminan las viñetas.
+
+```
+li {
+    list-style-type: none;
+}
+```
+
+Elimina el subrayado de los enlaces dentro de la lista.
+
+```
+li > a {
+    text-decoration: none;
+}
+```
+
+Diseña y estructura un contenedor, organizando el contenido en dos columnas (60% y 40%) y aplicando estilos de borde y color de fondo.
+
+```
+.productDetails {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    border: 2px solid;
+    padding: 10px;
+}
+```
+
+Crea un diseño de cuadrícula con dos columnas y cuatro filas, con márgenes exteriores y dimensiones específicas.
+
+```
+.pictureColumns {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 15% 80%;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
+    width: 90%;
+    height: 80%;
+}
+```
+
+Asegura que las imágenes dentro de elementos con la clase *pictureColumns* ocupen todo su contenedor y tengan un cursor interactivo al pasar el ratón sobre ellas.
+
+```
+.pictureColumns img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+```
+
+Establece un borde sólido de 2 píxeles alrededor de estos elementos.
+
+```
+.vista1, .vista2, .vista3, .vista4 {
+    border: 2px solid;
+}
+```
+
+Cambia la imagen de fondo y el ancho del elemento *pictureMain* cuando el elemento *vista1* está en estado de *:hover*.
+
+```
+.pictureColumns > .vista1:hover ~ .pictureMain {
+    background: url('./../images/bx-sushi.svg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+```
+
+Cambia la imagen de fondo y el ancho del elemento *pictureMain* cuando el elemento *vista2* está en estado de *:hover*.
+
+```
+.pictureColumns > .vista2:hover ~ .pictureMain {
+    background: url('./../images/bx-sushi.svg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+```
+
+Cambia la imagen de fondo y el ancho del elemento *pictureMain* cuando el elemento *vista3* está en estado de *:hover*.
+
+```
+.pictureColumns > .vista3:hover ~ .pictureMain {
+    background: url('./../images/bx-sushi.svg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+```
+
+Cambia la imagen de fondo y el ancho del elemento *pictureMain* cuando el elemento *vista4* está en estado de *:hover*.
+
+```
+.pictureColumns > .vista4:hover ~ .pictureMain {
+    background: url('./../images/bx-sushi.svg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+```
+
+Estiliza y posiciona el elemento *pictureMain* en una cuadrícula que tiene dos columnas, con una imagen de fondo específica.
+
+```
+.pictureMain {
+    background: url('./../images/camisa.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+```
+
+Define el contenedor como un contenedor flexible, con dirección de columna, sus elementos centrados verticalmente y un relleno en píxeles.
+
+```
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 25px 10px;
+}
+```
+
+Se define un diseño para un botón con un fondo de color gris oscuro, texto blanco, esquinas redondeadas, y un tamaño y ancho específicos.
+
+```
+.buyButton {
+    background-color: #3f3e53;
+    width: 100px;
+    font-size: 1rem;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+```
+
+Las siguientes reglas están relacionadas con el diseño responsivo, por lo que se aplican al momento que el ancho de la pantalla sea igual o menor 840px:
+
+
+
+Se ocultan el elemento con la clase *menuC* .
+
+```
+@media (max-width :840px) {
+    .menuC {
+        display: none;
+    }
+	...
+}
+```
+
+Se muestran los elementos de la clase *headerC* como una cuadrícula.
+
+```
+@media (max-width :840px) {
+	...
+    .headerC {
+        display: grid;
+    }
+    ...
+}
+```
+
+Se define un estilo para elementos con la clase *navTarget*. Los elementos se organizan en una disposición flexbox, se colocan en el extremo izquierdo del contenedor, se centran verticalmente y tienen un color de texto gris sin decoración de subrayado.
+
+```
+@media (max-width :840px) {
+    ...
+    .navTarget {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        color: #d9d9d9;
+        font-size: 2rem; 
+        text-decoration: none;
+    }
+    ...
+}
+```
+
+Se define el estilo para un menú desplegable *menuHam*. Cuando el menú está cerrado, se presenta como un círculo que se expande suavemente para revelar su contenido cuando se activa.
+
+```
+@media (max-width :840px) {
+    ...
+    .menuHam {
+        position: fixed;
+        width: 80%;
+        background: #2c2b47;
+        left: 20px;
+        top: 20%;
+        display: flex;
+        flex-direction: column;
+        padding: 5px 10px 25px 25px;
+        z-index: 1;        
+        clip-path: circle(0% at top left);
+        transition: clip-path 0.4s;
+        overflow: auto;
+    }
+    ...
+}
+```
+
+Al hacer clic en un enlace que tiene un fragmento de URL que coincide con el *id* de un elemento con la clase *menuHam*, se aplica esta regla para cambiar el aspecto del menú, mostrando su contenido.
+
+```
+@media (max-width :840px) {
+	...
+	.menuHam:target{
+        clip-path: circle(150% at top left);
+    }
+	...
+}
+```
+
+Establece el elemento *<ul>* como un bloque y agrega un relleno en todos sus lados.
+
+```
+@media (max-width :840px) {
+	...
+	.menuHam ul {
+        display: block;
+        padding: 15px;
+    }
+}
+
+```
+
