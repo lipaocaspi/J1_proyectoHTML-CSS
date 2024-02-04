@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* GENERAL */
+
 body {
     font-family: "Kanit", sans-serif;
     background-color: #1e1d2b;
@@ -13,6 +15,36 @@ p {
     margin: 0;
 }
 
+.center {
+    text-align: center;
+}
+
+.linkTexts {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem
+}
+
+.linkDownTexts {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.whiteText {
+    color: white;
+}
+
+.font15 {
+    font-size: 1.5rem;
+}
+
+.icons {
+    text-decoration: none;
+}
+
+/* HEADER */
+
 .header {
     display: grid;
     justify-content: end;
@@ -24,15 +56,7 @@ p {
     font-size: 4rem;
 }
 
-.center {
-    text-align: center;
-}
-
-.linkTexts {
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.5rem
-}
+/* PRODUCT DETAILS */
 
 .productDetails {
     display: grid;
@@ -78,14 +102,18 @@ p {
     width: 100%;
 }
 
-.linkDownTexts {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: white;
+/* CONTACT */
+
+.contact {
+    background-color: #2c2b47;
+    padding: 5%;
 }
 
-.whiteText {
-    color: white;
+.listContact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    padding: 1%;
 }
 
 .titleContact {
@@ -102,18 +130,6 @@ p {
     border: 1px solid #d9d9d9;
 }
 
-.contact {
-    background-color: #2c2b47;
-    padding: 5%;
-}
-
-.listContact {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5%;
-    padding: 1%;
-}
-
 .links {
     padding: 4%;
 }
@@ -122,9 +138,7 @@ i:hover {
     transform: scale(1.1);
 }
 
-.font15 {
-    font-size: 1.5rem;
-}
+/* RESPONSIVE */
 
 @media (max-width :840px) {
     .down {
