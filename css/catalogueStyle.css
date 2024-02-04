@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* GENERAL */
+
 body {
     font-family: "Kanit", sans-serif;
     background-color: #1e1d2b;
@@ -13,24 +15,56 @@ p {
     margin: 0;
 }
 
+.mark {
+    background-color: #d9d9d9;
+    color: #1e1d2b!important;
+}
+
+.center {
+    text-align: center;
+}
+
+.linkTexts {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem
+}
+
+.linkDownTexts {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.whiteText {
+    color: white;
+}
+
+.font15 {
+    font-size: 1.5rem;
+}
+
+/* HEADER */
+
+.menuC {
+    overflow: auto;
+    width: 100%;
+}
+
 .headerC {
     display: none
+}
+
+.menuHam, .navTarget, .closeMenu {
+    display: none;
+    cursor: pointer;
+    order: 1;
 }
 
 .catalogueTitle {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.mark {
-    background-color: #d9d9d9;
-    color: #1e1d2b!important;
-}
-
-.menuC {
-    overflow: auto;
-    width: 100%;
 }
 
 .menuHam{
@@ -41,33 +75,22 @@ p {
     background-color:#2c2b47;
     overflow-y: visible;
 }
+
 ul {
     margin: 0;
     padding: 0;
     margin-left: 5px;
 }
+
 li {
     list-style-type: none;
 }
-li>a {
+
+li > a {
     text-decoration: none;
 }
 
-.center {
-    text-align: center;
-}
-
-.menuHam, .navTarget, .closeMenu {
-    display: none;
-    cursor: pointer;
-    order: 1;
-}
-
-.linkTexts {
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.5rem
-}
+/* PRODUCT DETAILS */
 
 .productDetails {
     display: grid;
@@ -76,17 +99,6 @@ li>a {
     border-radius: 5px;
     border: 2px solid;
     padding: 10px;
-}
-
-.pictureMain {
-    background: url('./../images/camisa.png') no-repeat center;
-    background-size: contain;
-    width: 100%;
-    padding: 0;
-    border: 2px solid;
-    margin: 10px;
-    grid-column: 2;
-    grid-row: 1 / span 4;
 }
 
 .pictureColumns {
@@ -133,6 +145,17 @@ li>a {
     width: 100%;
 }
 
+.pictureMain {
+    background: url('./../images/camisa.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
 .details {
     display: flex;
     flex-direction: column;
@@ -149,14 +172,18 @@ li>a {
     color: white;
 }
 
-.linkDownTexts {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: white;
+/* CONTACT */
+
+.contact {
+    background-color: #2c2b47;
+    padding: 5%;
 }
 
-.whiteText {
-    color: white;
+.listContact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    padding: 1%;
 }
 
 .titleContact {
@@ -173,18 +200,6 @@ li>a {
     border: 1px solid #d9d9d9;
 }
 
-.contact {
-    background-color: #2c2b47;
-    padding: 5%;
-}
-
-.listContact {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5%;
-    padding: 1%;
-}
-
 .links {
     padding: 4%;
 }
@@ -193,20 +208,21 @@ i:hover {
     transform: scale(1.1);
 }
 
-.font15 {
-    font-size: 1.5rem;
-}
+/* RESPONSIVE */
 
 @media (max-width :840px) {
-    .down {
-        grid-template-columns: 100%;
-    }
     .menuC {
         display: none;
     }
+
     .headerC {
         display: grid;
     }
+
+    .down {
+        grid-template-columns: 100%;
+    }
+    
     .navTarget {
         display: flex;
         justify-content: start;
@@ -215,6 +231,7 @@ i:hover {
         font-size: 2rem; 
         text-decoration: none;
     }
+    
     .menuHam {
         position: fixed;
         width: 80%;
