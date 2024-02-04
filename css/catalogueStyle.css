@@ -25,6 +25,7 @@ p {
 
 .mark {
     background-color: #d9d9d9;
+    color: #1e1d2b!important;
 }
 
 .menuC {
@@ -185,7 +186,7 @@ li>a {
 }
 
 .links {
-    padding: 1%;
+    padding: 4%;
 }
 
 i:hover {

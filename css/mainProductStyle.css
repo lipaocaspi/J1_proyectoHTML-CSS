@@ -116,6 +116,10 @@ p {
     padding: 1%;
 }
 
+.links {
+    padding: 4%;
+}
+
 .linkDownTexts {
     text-decoration: none;
     font-size: 1.2rem;
