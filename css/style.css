@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* GENERAL */
+
 body {
     font-family: "Kanit", sans-serif;
     background-color: #1e1d2b;
@@ -15,54 +17,6 @@ p {
 
 .center {
     text-align: center;
-}
-
-.nav {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    justify-content: end;
-    align-items: center;
-}
-
-.menuP {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-
-.menuA {
-    text-decoration: none;
-    color: #fff;
-    text-align: end;
-    font-weight: 500;
-    padding: 0px 30px;
-    transition: 0.4s;
-}
-
-.navTarget, .closeMenu {
-    display: none;
-    cursor: pointer;
-    order: 1;
-}
-
-.header {
-    display: grid;
-    grid-template-columns: 20% 80%;
-}
-
-.logo {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.logoMainPage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
-    width: 100%;
 }
 
 .linkTexts {
@@ -93,6 +47,57 @@ p {
     transform: scale(1.1);
 }
 
+.icons {
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.nav {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: end;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoMainPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    width: 100%;
+}
+
+.navTarget, .closeMenu {
+    display: none;
+    cursor: pointer;
+    order: 1;
+}
+
+.menuP {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.menuA {
+    text-decoration: none;
+    color: #fff;
+    text-align: end;
+    font-weight: 500;
+    padding: 0px 30px;
+    transition: 0.4s;
+}
+
+/* AD */
+
 .ad {
     display: grid;
     align-items: center;
@@ -104,6 +109,8 @@ p {
     width: 100%;
     border-radius: 1%;
 }
+
+/* MAIN PRODUCTS */
 
 .subtitleMainPage {
     text-decoration: none;
@@ -139,6 +146,13 @@ p {
     text-align: center;
 }
 
+.mainProductImage {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    padding: 10px;
+}
+
 .descProduct {
     font-size: 20px;
 }
@@ -148,11 +162,18 @@ p {
     transform: scale(1.1);
 }
 
-.mainProductImage {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    padding: 10px;
+/* CONTACT */
+
+.contact {
+    background-color: #2c2b47;
+    padding: 5%;
+}
+
+.listContact {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 5%;
+    padding: 1%;
 }
 
 .titleContact {
@@ -169,18 +190,6 @@ p {
     border: 1px solid #d9d9d9;
 }
 
-.contact {
-    background-color: #2c2b47;
-    padding: 5%;
-}
-
-.listContact {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    gap: 5%;
-    padding: 1%;
-}
-
 .links {
     padding: 4%;
 }
@@ -189,10 +198,9 @@ i:hover {
     transform: scale(1.1);
 }
 
+/* RESPONSIVE */
+
 @media (max-width :840px) {
-    .descProduct {
-        font-size: 15px;
-    }
     .navTarget {
         display: flex;
         justify-content: end;
@@ -201,6 +209,7 @@ i:hover {
         font-size: 2rem; 
         text-decoration: none;
     }
+
     .menuP {
         position: fixed;
         width: 80%;
@@ -240,14 +249,21 @@ i:hover {
     .down {
         grid-template-columns: 100%;
     }
-    .smallProduct {
-        width: 40%;
-    }
+
     .gap {
         gap: 2%;
     }
+
+    .smallProduct {
+        width: 40%;
+    }
+
     .smallImage {
         width: 150px;
         height: 150px;
+    }
+
+    .descProduct {
+        font-size: 15px;
     }
 }
