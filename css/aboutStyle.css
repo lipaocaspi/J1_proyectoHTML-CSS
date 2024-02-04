@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* GENERAL */
+
 body {
     font-family: "Kanit", sans-serif;
     background-color: #1e1d2b;
@@ -7,10 +9,6 @@ body {
 
 .container {
     padding: 2%;
-}
-
-.background {
-    background-color: #d9d9d9;
 }
 
 p {
@@ -21,83 +19,10 @@ p {
     text-align: center;
 }
 
-.nav {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    justify-content: end;
-    align-items: center;
-}
-
-.menuP {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-
-.menuA {
-    text-decoration: none;
-    color: #fff;
-    text-align: end;
-    font-weight: 500;
-    padding: 0px 30px;
-    transition: 0.4s;
-}
-
-.navTarget, .closeMenu {
-    display: none;
-    cursor: pointer;
-    order: 1;
-}
-
-.header {
-    display: grid;
-    grid-template-columns: 20% 80%;
-}
-
-.logo {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.logoMainPage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
-    width: 100%;
-}
-
 .linkTexts {
     text-decoration: none;
     text-align: center;
     font-size: 1.5rem
-}
-
-.box {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    padding: 50px;
-}
-
-.pictureMain {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.picture {
-    width: 50%;
-}
-
-.buyButton {
-    background-color: #3f3e53;
-    font-size: 1rem;
-    padding: 5px 10px 5px 10px;
-    border-radius: 5px;
-    color: white;
-    width: 150px;
 }
 
 .linkDownTexts {
@@ -118,9 +43,84 @@ p {
     font-weight: 500;
 }
 
+.headerLinks:hover {
+    transform: scale(1.1);
+}
+
+.icons {
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.nav {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: end;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoMainPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    width: 100%;
+}
+
+.navTarget, .closeMenu {
+    display: none;
+    cursor: pointer;
+    order: 1;
+}
+
+.menuP {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.menuA {
+    text-decoration: none;
+    color: #fff;
+    text-align: end;
+    font-weight: 500;
+    padding: 0px 30px;
+    transition: 0.4s;
+}
+
+/* MAIN CONTENT */
+
 .titlePage {
     font-size: 2.5rem;
     text-align: center;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    padding: 50px;
+}
+
+.background {
+    background-color: #d9d9d9;
+}
+
+.pictureMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture {
+    width: 50%;
 }
 
 .details {
@@ -135,8 +135,27 @@ p {
     font-size: larger;
 }
 
-.headerLinks:hover {
-    transform: scale(1.1);
+.contactButton {
+    background-color: #3f3e53;
+    font-size: 1rem;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    color: white;
+    width: 150px;
+}
+
+/* CONTACT */
+
+.contact {
+    background-color: #2c2b47;
+    padding: 5%;
+}
+
+.listContact {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 5%;
+    padding: 1%;
 }
 
 .titleContact {
@@ -153,18 +172,6 @@ p {
     border: 1px solid #d9d9d9;
 }
 
-.contact {
-    background-color: #2c2b47;
-    padding: 5%;
-}
-
-.listContact {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    gap: 5%;
-    padding: 1%;
-}
-
 .links {
     padding: 4%;
 }
@@ -172,6 +179,8 @@ p {
 i:hover {
     transform: scale(1.1);
 }
+
+/* RESPONSIVE */
 
 @media (max-width :840px) {
     .navTarget {
@@ -221,12 +230,15 @@ i:hover {
     .down {
         grid-template-columns: 100%;
     }
-    .smallProduct {
-        width: 40%;
-    }
+    
     .gap {
         gap: 2%;
     }
+
+    .smallProduct {
+        width: 40%;
+    }
+
     .smallImage {
         width: 150px;
         height: 150px;
