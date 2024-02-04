@@ -13,7 +13,7 @@ Para este proyecto se crearon 5 archivos de estilos:
 
 
 
-### aboutStyle.css
+## aboutStyle.css
 
 Al cuerpo del documento se le asigna un color de fondo y una fuente de texto.
 
@@ -175,3 +175,138 @@ Se define el estilo de un enlace *<a>* con la clase *menuA*. Elimina el subrayad
 }
 ```
 
+A todos los elementos que tengan la clase *titlePage* se le asigna un tamaño de 2.5rem y se centra.
+
+```
+.titlePage {
+    font-size: 2.5rem;
+    text-align: center;
+}
+```
+
+Se define un contenedor de cuadrícula con dos columnas, cada una ocupando el 50% del ancho del contenedor. Además, se agrega un espacio de relleno de 50 píxeles alrededor del contenido.
+
+```
+.box {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    padding: 50px;
+}
+```
+
+Se asigna un color al fondo del elemento con la clase *background* .
+
+```
+.background {
+    background-color: #d9d9d9;
+}
+```
+
+Se define un contenedor flexible que centra tanto horizontal como verticalmente sus elementos hijos.
+
+```
+.pictureMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+```
+
+Se aplica a elementos que tengan la clase *picture*, y ajusta su ancho al 50% del contenedor principal.
+
+```
+.picture {
+    width: 50%;
+}
+```
+
+Se define un contenedor flexible con dirección de columna, centrando verticalmente sus elementos hijos, justificando el texto y agregando un espacio de relleno alrededor del contenido.
+
+```
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    padding: 10px;
+}
+```
+
+Se aumenta el tamaño de la fuente de los textos con la clase *desc*.
+
+```
+.desc {
+    font-size: larger;
+}
+```
+
+Se define un diseño para un botón con un fondo de color gris oscuro, texto blanco, esquinas redondeadas, y un tamaño y ancho específicos.
+
+```
+.contactButton {
+    background-color: #3f3e53;
+    font-size: 1rem;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    color: white;
+    width: 150px;
+}
+```
+
+Se define un diseño para un contenedor con la clase *contact*, con un fondo de color gris oscuro y un espacio de relleno del 5%.
+
+```
+.contact {
+    background-color: #2c2b47;
+    padding: 5%;
+}
+```
+
+Se define un contenedor de cuadrícula con dos columnas, un espacio entre las filas y columnas del 5%, y un espacio de relleno del 1%.
+
+```
+.listContact {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 5%;
+    padding: 1%;
+}
+```
+
+Se define el aspecto de un título con la clase *titleContact*. Elimina el subrayado, establece el color del texto como blanco, centra el texto, ajusta el tamaño de la fuente y el peso de la fuente.
+
+```
+.titleContact {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+```
+
+Se define un elemento horizontal con la clase *hrContact* que tiene un ancho del 30% y un borde sólido gris de 1 píxel.
+
+```
+.hrContact {
+    width: 30%; 
+    border: 1px solid #d9d9d9;
+}
+```
+
+Se define un espacio de relleno del 4% para los elementos con la clase *links*.
+
+```
+.links {
+    padding: 4%;
+}
+```
+
+Al pasar el cursor por cualquier elemento *i* , se aumenta la escala del elemento al 110% de su tamaño original, mientras el cursor esté sobre él.
+
+```
+i:hover {
+    transform: scale(1.1);
+}
+```
