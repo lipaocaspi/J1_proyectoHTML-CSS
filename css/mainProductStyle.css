@@ -33,6 +33,14 @@ p {
     width: 100%;
 }
 
+.close {
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    color: white;
+    font-size: 4rem;
+}
+
 .pictureDetails {
     display: grid;
     grid-template-columns: 60% 40%;
