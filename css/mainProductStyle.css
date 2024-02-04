@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* GENERAL */
+
 body {
     font-family: "Kanit", sans-serif;
     background-color: #1e1d2b;
@@ -12,6 +14,38 @@ body {
 p {
     margin: 0;
 }
+
+.textColor {
+    color: #d9d9d9;
+}
+
+.font20 {
+    font-size: 20px;
+}
+
+.font500 {
+    font-weight: 500;
+}
+
+.font2 {
+    font-size: 2rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.linkDownTexts {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.icons {
+    text-decoration: none;
+}
+
+/* HEADER */
 
 .header {
     display: grid;
@@ -40,6 +74,8 @@ p {
     color: white;
     font-size: 4rem;
 }
+
+/* PICTURE AND DETAILS */
 
 .pictureDetails {
     display: grid;
@@ -72,30 +108,30 @@ p {
     color: black;
 }
 
+/* DETAILS AND REVIEWS */
+
 .details {
     display: flex;
     flex-direction: column;
     padding: 2%;
 }
 
-.textColor {
-    color: #d9d9d9;
-}
-
-.font500 {
-    font-weight: 500;
-}
-
-.font2 {
-    font-size: 2rem;
-}
-
-.center {
-    text-align: center;
-}
-
 .reviews {
     padding: 1% 5% 1% 5%;
+}
+
+/* CONTACT */
+
+.contact {
+    background-color: #2c2b47;
+    padding: 5%;
+}
+
+.listContact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    padding: 1%;
 }
 
 .titleContact {
@@ -112,31 +148,15 @@ p {
     border: 1px solid #d9d9d9;
 }
 
-.contact {
-    background-color: #2c2b47;
-    padding: 5%;
-}
-
-.listContact {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5%;
-    padding: 1%;
-}
-
 .links {
     padding: 4%;
-}
-
-.linkDownTexts {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: white;
 }
 
 i:hover {
     transform: scale(1.1);
 }
+
+/* RESPONSIVE */
 
 @media (max-width :840px) {
     .down {
