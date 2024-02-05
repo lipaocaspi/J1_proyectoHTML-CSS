@@ -667,7 +667,7 @@ Define el contenedor como un contenedor flexible, con dirección de columna, sus
 }
 ```
 
-Se define un diseño para un botón con un fondo de color gris oscuro, texto blanco, esquinas redondeadas, y un tamaño y ancho específicos.
+Se define un diseño para un botón con un fondo de color gris oscuro, texto blanco, esquinas redondeadas, y un ancho específicos.
 
 ```
 .buyButton {
@@ -896,6 +896,99 @@ Agrega espacio alrededor del contenido del elemento con la clase *reviews*, prop
 ```
 .reviews {
     padding: 1% 5% 1% 5%;
+}
+```
+
+
+
+## productStyles.css
+
+**Nota** : algunos estilos de esta hoja ya han sido explicados anteriormente, por lo que serán omitidos.
+
+Organiza y alinea los elementos secundarios en la clase *header* en una cuadrícula, con los elementos alineados hacia el extremo derecho de esa cuadrícula.
+
+```
+.header {
+    display: grid;
+    justify-content: end;
+}
+```
+
+Estiliza los elementos con la clase *close* como texto sin subrayado, con color blanco y un tamaño de fuente grande.
+
+```
+.close {
+    text-decoration: none;
+    color: white;
+    font-size: 4rem;
+}
+```
+
+Estiliza los elementos con la clase *productDetails* como un contenedor de cuadrícula con una sola columna que ocupa el 100% del ancho, con un fondo gris, bordes redondeados y relleno.
+
+```
+.productDetails {
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    border: 2px solid;
+    padding: 10px;
+}
+```
+
+Estiliza los elementos con la clase *pictureMain* como un contenedor flexible centrado tanto vertical como horizontalmente, con un relleno, un borde y un margen.
+
+```
+.pictureMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid;
+    margin: 10px;
+}
+```
+
+Limita el ancho de los elementos con la clase *picture* a 200 píxeles.
+
+```
+.picture {
+    width: 200px;
+}
+```
+
+Estiliza los elementos con la clase *details* como un contenedor flexible con dirección de columna, centrando los elementos verticalmente y agregando un relleno específico alrededor del contenido.
+
+```
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 25px 10px;
+}
+```
+
+Crea un diseño de cuadrícula para los elementos con la clase *registroCantidad*, dividiendo el espacio en dos columnas, una que ocupa el 75% y otra el 25%, con un espacio de separación del 1% entre ellas.
+
+```
+.registroCantidad {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    gap: 1%;
+}
+```
+
+Se define un diseño para un botón con un fondo de color gris oscuro, texto blanco, esquinas redondeadas, y un ancho del 100%.
+
+```
+.buyButton {
+    background-color: #3f3e53;
+    font-size: 1rem;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
 }
 ```
 
