@@ -992,3 +992,113 @@ Se define un diseño para un botón con un fondo de color gris oscuro, texto bla
 }
 ```
 
+
+
+## style.css
+
+**Nota** : algunos estilos de esta hoja ya han sido explicados anteriormente, por lo que serán omitidos.
+
+Se define un contenedor de cuadrícula centrado verticalmente con una imagen de fondo que cubre el contenedor y márgenes específicos en cada lado.
+
+```
+.ad {
+    display: grid;
+    align-items: center;
+    background-size: cover;
+    margin: 5% 3% 5% 3%;
+}
+```
+
+Estiliza imágenes, asegurándose de que ocupen todo el ancho disponible y tengan esquinas ligeramente redondeadas.
+
+```
+.adImage {
+    width: 100%;
+    border-radius: 1%;
+}
+```
+
+Estiliza subtítulos, haciéndolos más grandes, centrados y con un color de texto blanco.
+
+```
+.subtitleMainPage {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    font-size: 2rem;
+}
+```
+
+Organiza los elementos con la clase *mainProducts* en una cuadrícula de tres columnas, centrando los elementos tanto vertical como horizontalmente en cada celda de la cuadrícula y agregando un espacio de relleno del 2%.
+
+```
+.mainProducts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    padding: 2%;
+}
+```
+
+Crea un contenedor con estilo para los elementos con la clase *mainProduct*. El contenedor es flexible, centrando su contenido tanto horizontal como verticalmente, con un fondo de color gris claro, esquinas redondeadas y un ancho del 80%.
+
+```
+.mainProduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #d9d9d9;
+    border-radius: 5%;
+    padding: 20px 0px 20px 0px;
+    width: 80%;
+}
+```
+
+A todos los textos que tengan la clase *titleProduct* se centran y se define su tamaño como 15 píxeles.
+
+```
+.titleProduct {
+    font-size: 15px; 
+    text-align: center;
+}
+```
+
+Aplica estilos específicos, como dimensiones, ajuste de contenido y relleno, a los elementos con la clase *mainProductImage*.
+
+```
+.mainProductImage {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    padding: 10px;
+}
+```
+
+Al pasar el cursor por cualquier elemento que tenga la clase *mainProduct* , se aumenta la escala de mismo al 110% de su tamaño original, además de que su color cambia a blanco, mientras el cursor esté sobre él.
+
+```
+.mainProduct:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+```
+
+Las siguientes reglas están relacionadas con el diseño responsivo, por lo que se aplican al momento que el ancho de la pantalla sea igual o menor 840px:
+
+
+
+Establece el tamaño de la fuente del texto dentro de los elementos con la clase *descProduct* a 15 píxeles.
+
+```
+@media (max-width :840px) {
+	...
+	.descProduct {
+        font-size: 15px;
+    }
+}
+```
