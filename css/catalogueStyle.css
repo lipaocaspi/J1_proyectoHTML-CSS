@@ -125,32 +125,701 @@ li > a {
     border: 2px solid;
 }
 
-.pictureColumns > .vista1:hover ~ .pictureMain {
-    background: url('./../images/bx-sushi.svg') no-repeat center;
+.pictureColumns > .vista1:hover ~ .pictureMain1_1 {
+    background: url('./../images/camisa_1.png') no-repeat center;
     background-size: cover;
     width: 100%;
 }
 
-.pictureColumns > .vista2:hover ~ .pictureMain {
-    background: url('./../images/bx-sushi.svg') no-repeat center;
+.pictureColumns > .vista2:hover ~ .pictureMain1_1 {
+    background: url('./../images/camisa_2.png') no-repeat center;
     background-size: cover;
     width: 100%;
 }
 
-.pictureColumns > .vista3:hover ~ .pictureMain {
-    background: url('./../images/bx-sushi.svg') no-repeat center;
+.pictureColumns > .vista3:hover ~ .pictureMain1_1 {
+    background: url('./../images/camisa_3.png') no-repeat center;
     background-size: cover;
     width: 100%;
 }
 
-.pictureColumns > .vista4:hover ~ .pictureMain {
-    background: url('./../images/bx-sushi.svg') no-repeat center;
+.pictureColumns > .vista4:hover ~ .pictureMain1_1 {
+    background: url('./../images/camisa_4.png') no-repeat center;
     background-size: cover;
     width: 100%;
 }
 
-.pictureMain {
+.pictureMain1_1 {
     background: url('./../images/camisa.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
+.pictureColumns > .vista1:hover ~ .pictureMain2_1 {
+    background: url('./../images/buso_1.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista2:hover ~ .pictureMain2_1 {
+    background: url('./../images/buso_2.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista3:hover ~ .pictureMain2_1 {
+    background: url('./../images/buso_3.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista4:hover ~ .pictureMain2_1 {
+    background: url('./../images/buso_4.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureMain2_1 {
+    background: url('./../images/buso.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
+.pictureColumns > .vista1:hover ~ .pictureMain3_1 {
+    background: url('./../images/gorra_1.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista2:hover ~ .pictureMain3_1 {
+    background: url('./../images/gorra_2.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista3:hover ~ .pictureMain3_1 {
+    background: url('./../images/gorra_3.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista4:hover ~ .pictureMain3_1 {
+    background: url('./../images/gorra_4.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureMain3_1 {
+    background: url('./../images/gorra.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
+.pictureColumns > .vista1:hover ~ .pictureMain4_1 {
+    background: url('./../images/gafas_1.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista2:hover ~ .pictureMain4_1 {
+    background: url('./../images/gafas_2.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista3:hover ~ .pictureMain4_1 {
+    background: url('./../images/gafas_3.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista4:hover ~ .pictureMain4_1 {
+    background: url('./../images/gafas_4.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureMain4_1 {
+    background: url('./../images/gafas.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
+
+.pictureColumns > .vista1:hover ~ .pictureMain1_2 {
+    background: url('./../images/mug_1.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista2:hover ~ .pictureMain1_2 {
+    background: url('./../images/mug_2.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista3:hover ~ .pictureMain1_2 {
+    background: url('./../images/mug_3.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista4:hover ~ .pictureMain1_2 {
+    background: url('./../images/mug_4.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureMain1_2 {
+    background: url('./../images/mug.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
+.pictureColumns > .vista1:hover ~ .pictureMain2_2 {
+    background: url('./../images/termoM_1.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista2:hover ~ .pictureMain2_2 {
+    background: url('./../images/termoM_2.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista3:hover ~ .pictureMain2_2 {
+    background: url('./../images/termoM_3.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista4:hover ~ .pictureMain2_2 {
+    background: url('./../images/termoM_4.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureMain2_2 {
+    background: url('./../images/termoM.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
+.pictureColumns > .vista1:hover ~ .pictureMain3_2 {
+    background: url('./../images/termoP_1.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista2:hover ~ .pictureMain3_2 {
+    background: url('./../images/termoP_2.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista3:hover ~ .pictureMain3_2 {
+    background: url('./../images/termoP_3.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista4:hover ~ .pictureMain3_2 {
+    background: url('./../images/termoP_4.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureMain3_2 {
+    background: url('./../images/termoP.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
+.pictureColumns > .vista1:hover ~ .pictureMain4_2 {
+    background: url('./../images/termoC_1.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista2:hover ~ .pictureMain4_2 {
+    background: url('./../images/termoC_2.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista3:hover ~ .pictureMain4_2 {
+    background: url('./../images/termoC_3.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista4:hover ~ .pictureMain4_2 {
+    background: url('./../images/termoC_4.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureMain4_2 {
+    background: url('./../images/termoC.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
+
+.pictureColumns > .vista1:hover ~ .pictureMain1_3 {
+    background: url('./../images/empanada_1.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista2:hover ~ .pictureMain1_3 {
+    background: url('./../images/empanada_2.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista3:hover ~ .pictureMain1_3 {
+    background: url('./../images/empanada_3.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista4:hover ~ .pictureMain1_3 {
+    background: url('./../images/empanada_4.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureMain1_3 {
+    background: url('./../images/empanada.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
+.pictureColumns > .vista1:hover ~ .pictureMain2_3 {
+    background: url('./../images/papas_1.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista2:hover ~ .pictureMain2_3 {
+    background: url('./../images/papas_2.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista3:hover ~ .pictureMain2_3 {
+    background: url('./../images/papas_3.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista4:hover ~ .pictureMain2_3 {
+    background: url('./../images/papas_4.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureMain2_3 {
+    background: url('./../images/papas.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
+.pictureColumns > .vista1:hover ~ .pictureMain3_3 {
+    background: url('./../images/arepa_1.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista2:hover ~ .pictureMain3_3 {
+    background: url('./../images/arepa_2.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista3:hover ~ .pictureMain3_3 {
+    background: url('./../images/arepa_3.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista4:hover ~ .pictureMain3_3 {
+    background: url('./../images/arepa_4.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureMain3_3 {
+    background: url('./../images/arepa.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
+.pictureColumns > .vista1:hover ~ .pictureMain4_3 {
+    background: url('./../images/cocosette_1.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista2:hover ~ .pictureMain4_3 {
+    background: url('./../images/cocosette_2.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista3:hover ~ .pictureMain4_3 {
+    background: url('./../images/cocosette_3.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista4:hover ~ .pictureMain4_3 {
+    background: url('./../images/cocosette_4.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureMain4_3 {
+    background: url('./../images/cocosette.jpg') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
+
+.pictureColumns > .vista1:hover ~ .pictureMain1_4 {
+    background: url('./../images/cafe_1.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista2:hover ~ .pictureMain1_4 {
+    background: url('./../images/cafe_2.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista3:hover ~ .pictureMain1_4 {
+    background: url('./../images/cafe_3.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista4:hover ~ .pictureMain1_4 {
+    background: url('./../images/cafe_4.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureMain1_4 {
+    background: url('./../images/cafe.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
+.pictureColumns > .vista1:hover ~ .pictureMain2_4 {
+    background: url('./../images/gaseosa_1.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista2:hover ~ .pictureMain2_4 {
+    background: url('./../images/gaseosa_2.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista3:hover ~ .pictureMain2_4 {
+    background: url('./../images/gaseosa_3.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista4:hover ~ .pictureMain2_4 {
+    background: url('./../images/gaseosa_4.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureMain2_4 {
+    background: url('./../images/gaseosa.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
+.pictureColumns > .vista1:hover ~ .pictureMain3_4 {
+    background: url('./../images/jugo_1.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista2:hover ~ .pictureMain3_4 {
+    background: url('./../images/jugo_2.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista3:hover ~ .pictureMain3_4 {
+    background: url('./../images/jugo_3.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista4:hover ~ .pictureMain3_4 {
+    background: url('./../images/jugo_4.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureMain3_4 {
+    background: url('./../images/jugo.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
+.pictureColumns > .vista1:hover ~ .pictureMain4_4 {
+    background: url('./../images/speed_1.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista2:hover ~ .pictureMain4_4 {
+    background: url('./../images/speed_2.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista3:hover ~ .pictureMain4_4 {
+    background: url('./../images/speed_3.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista4:hover ~ .pictureMain4_4 {
+    background: url('./../images/speed_4.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureMain4_4 {
+    background: url('./../images/speed.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
+
+.pictureColumns > .vista1:hover ~ .pictureMain1_5 {
+    background: url('./../images/ping_1.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista2:hover ~ .pictureMain1_5 {
+    background: url('./../images/ping_2.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista3:hover ~ .pictureMain1_5 {
+    background: url('./../images/ping_3.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista4:hover ~ .pictureMain1_5 {
+    background: url('./../images/ping_4.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureMain1_5 {
+    background: url('./../images/ping.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
+.pictureColumns > .vista1:hover ~ .pictureMain2_5 {
+    background: url('./../images/guantes_1.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista2:hover ~ .pictureMain2_5 {
+    background: url('./../images/guantes_2.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista3:hover ~ .pictureMain2_5 {
+    background: url('./../images/guantes_3.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista4:hover ~ .pictureMain2_5 {
+    background: url('./../images/guantes_4.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureMain2_5 {
+    background: url('./../images/guantes.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
+.pictureColumns > .vista1:hover ~ .pictureMain3_5 {
+    background: url('./../images/base_1.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista2:hover ~ .pictureMain3_5 {
+    background: url('./../images/base_2.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista3:hover ~ .pictureMain3_5 {
+    background: url('./../images/base_3.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista4:hover ~ .pictureMain3_5 {
+    background: url('./../images/base_4.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureMain3_5 {
+    background: url('./../images/base.png') no-repeat center;
+    background-size: contain;
+    width: 100%;
+    padding: 0;
+    border: 2px solid;
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
+.pictureColumns > .vista1:hover ~ .pictureMain4_5 {
+    background: url('./../images/bad_1.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista2:hover ~ .pictureMain4_5 {
+    background: url('./../images/bad_2.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista3:hover ~ .pictureMain4_5 {
+    background: url('./../images/bad_3.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureColumns > .vista4:hover ~ .pictureMain4_5 {
+    background: url('./../images/bad_4.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pictureMain4_5 {
+    background: url('./../images/bad.png') no-repeat center;
     background-size: contain;
     width: 100%;
     padding: 0;
